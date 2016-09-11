@@ -15,5 +15,9 @@ public class application extends Application {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             WebView.setWebContentsDebuggingEnabled(true);
         }
+
+        /**
+         * 我是test分支,这个功能我开发好了。
+         */
     }
 }
