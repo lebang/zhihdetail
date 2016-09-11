@@ -55,9 +55,7 @@ public class DetailActivity extends AppCompatActivity {
         mWebView.getSettings().setLoadsImagesAutomatically(true);
         mWebView.setVerticalScrollBarEnabled(false);
         mWebView.setHorizontalScrollBarEnabled(false);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            WebView.setWebContentsDebuggingEnabled(true);
-        }
+
     }
     /*private void showNews(JSONObject data){
 

@@ -12,5 +12,8 @@ public class application extends Application {
     public void onCreate() {
         super.onCreate();
 
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            WebView.setWebContentsDebuggingEnabled(true);
+        }
     }
 }
