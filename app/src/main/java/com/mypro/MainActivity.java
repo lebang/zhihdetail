@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private RequestQueue mQueue;
-    private String URL = "http://news-at.zhihu.com/api/4/news/latest";//单一职责
-    private List<TopStory> topStoryOfList = new ArrayList<TopStory>();
+    private final String URL = "http://news-at.zhihu.com/api/4/news/latest";//单一职责
+    private final List<TopStory> topStoryOfList = new ArrayList<>();
     private ListView mTopStoryListView;
     private StoryAdapter mStoryAdapter;
 

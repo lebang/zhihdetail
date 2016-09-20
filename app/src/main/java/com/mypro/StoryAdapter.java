@@ -15,10 +15,10 @@ import java.util.List;
 /**
  * Created by lebang on 16/9/11.
  */
-public class StoryAdapter extends BaseAdapter {
+class StoryAdapter extends BaseAdapter {
 
-    private Context mContext;
-    private List<TopStory> topStoryOfList;
+    private final Context mContext;
+    private final List<TopStory> topStoryOfList;
 
     public  StoryAdapter(Context context, List<TopStory> objects){
         this.mContext = context;
@@ -40,7 +40,7 @@ public class StoryAdapter extends BaseAdapter {
     public View getView (int position, View convertView, ViewGroup parent){
         TopStory topStory = topStoryOfList.get(position);
         final View view;
-        view = LayoutInflater.from(mContext).inflate(R.layout.story_item,null);
+        view = LayoutInflater.from(mContext).inflate(R.layout.story_item, parent, false);
         ImageView img = (ImageView) view.findViewById(R.id.story_img);
         TextView title = (TextView) view.findViewById(R.id.story_title);
         Glide.with(mContext).load(topStory.getImage()).into(img);

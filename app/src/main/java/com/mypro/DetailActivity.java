@@ -1,7 +1,7 @@
 package com.mypro;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -49,6 +49,7 @@ public class DetailActivity extends AppCompatActivity {
         mQueue.add(jsonRequest);
     }*/
 
+    @SuppressLint("SetJavaScriptEnabled")
     private void initWebView() {
         mWebView = (WebView) findViewById(R.id.id_webview);
         mWebView.getSettings().setJavaScriptEnabled(true);

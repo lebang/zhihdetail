@@ -3,7 +3,7 @@ package com.mypro;
 /**
  * Created by lebang on 16/9/11.
  */
-public class TopStory {
+class TopStory {
 
     private String id;
     private String title;

@@ -7,7 +7,7 @@ import android.webkit.WebView;
 /**
  * Created by lebang on 16/9/11.
  */
-public class application extends Application {
+public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
